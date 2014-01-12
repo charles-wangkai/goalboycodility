@@ -1,5 +1,6 @@
 package StoneWall;
 
+// Sigma 2012
 // http://codility.com/demo/results/demoRX6A3A-2JY/
 
 import java.util.Stack;
