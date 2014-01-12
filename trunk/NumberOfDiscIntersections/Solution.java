@@ -1,5 +1,6 @@
 package NumberOfDiscIntersections;
 
+// Beta 2010
 // http://codility.com/demo/results/demo6VVUY6-4PM/
 
 import java.util.Arrays;
