@@ -1,5 +1,6 @@
 package Flags;
 
+// Boron 2013
 // http://codility.com/demo/results/demoPUZWTF-4MF/
 
 import java.util.ArrayList;
