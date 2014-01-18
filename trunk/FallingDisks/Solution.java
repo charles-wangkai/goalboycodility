@@ -1,5 +1,6 @@
 package FallingDisks;
 
+// Omega 2013
 // http://codility.com/demo/results/demoKQ3R5T-M29/
 
 import java.util.Stack;
