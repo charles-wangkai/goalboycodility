@@ -1,5 +1,6 @@
 package Cannonballs;
 
+// Chi 2012
 // http://codility.com/demo/results/demoKQ2WXJ-XPG/
 
 import java.util.Arrays;
