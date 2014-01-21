@@ -2,7 +2,7 @@
 // @name        codility solved problem marker
 // @namespace   codility
 // @description mark solved problems in green
-// @include     http://codility.com/train/
+// @include     http://codility.com/demo/train/*
 // @version     1
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @grant       GM_xmlhttpRequest
@@ -18,7 +18,7 @@ $(document).ready(function() {
   };
   
   var markSolvedProblem = function($problemName) {
-    var name = $.map($problemName.html().trim().split('-'), capitaliseFirstLetter).join('');
+    var name = $.map($problemName.attr('href').trim().substr('/demo/take-sample-test/'.length).split('_'), capitaliseFirstLetter).join('');
     if (name in RENAMED_PROBLEMS) {
       name = RENAMED_PROBLEMS[name];
     }
@@ -28,7 +28,7 @@ $(document).ready(function() {
       url: url,
       onload: function(resp) {
         if (resp.status === 200) {
-          $problemName.css('background-color', 'lightgreen');
+          $problemName.css('background-color', 'yellow');
         }
       }
     });
@@ -37,7 +37,7 @@ $(document).ready(function() {
   var $problemNames = $('a').filter(function() {
     return $(this).attr('href').indexOf('/demo/take-sample-test/') >= 0;
   });
-  
+
   $.each($problemNames, function(index, value) {
     markSolvedProblem($(value));
   });
