@@ -2,7 +2,7 @@
 // @name        codility solved problem marker
 // @namespace   codility
 // @description mark solved problems in green
-// @include     http://codility.com/demo/train/*
+// @include     https://codility.com/demo/train/*
 // @version     1
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @grant       GM_xmlhttpRequest
