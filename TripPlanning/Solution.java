@@ -1,7 +1,7 @@
 package TripPlanning;
 
 // Fluorum 2014
-// https://codility.com/cert/view/cert5M6YWZ-5DUVT7RTPSVRGKEY
+// https://codility.com/cert/view/certFMSQW2-PFSGEP9US7D858JJ
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -146,11 +146,6 @@ public class Solution {
 				leaves.add(new DepthNIndex(depths[current], current));
 			}
 		}
-	}
-
-	public static void main(String[] args) {
-		System.out.println(new Solution().solution(2, new int[] { 1, 2, 3, 3,
-				2, 1, 4 }).length);
 	}
 }
 
